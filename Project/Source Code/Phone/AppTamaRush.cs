@@ -180,7 +180,7 @@ namespace TamaRush.Phone
             audioOptionsBtn.OnConfirm += ShowAudioOptionsMenu;
             ScrollView.AddButton(audioOptionsBtn);
 
-            if (TamaRushPlugin.DebugMode.Value != null)
+            if (TamaRushPlugin.DebugMode.Value == true)
             {
                 var DebugOptionsBtn = PhoneUIUtility.CreateSimpleButton("Debug Options");
                 DebugOptionsBtn.OnConfirm += ShowDebugOptionsMenu;
@@ -294,22 +294,6 @@ namespace TamaRush.Phone
             };
             ScrollView.AddButton(DebugspeedBtn);
 
-            var DumpSpritesBtn = PhoneUIUtility.CreateSimpleButton("Dump Sprites");
-            DumpSpritesBtn.OnConfirm += ShowSettingsMenu;
-            ScrollView.AddButton(DumpSpritesBtn);
-
-            var InjectSpritesBtn = PhoneUIUtility.CreateSimpleButton("Inject Sprites");
-            InjectSpritesBtn.OnConfirm += ShowSettingsMenu;
-            ScrollView.AddButton(InjectSpritesBtn);
-
-            var SpritesFolderBtn = PhoneUIUtility.CreateSimpleButton("Open Sprites Folder");
-            SpritesFolderBtn.OnConfirm += OpenSpritesFolder;
-            ScrollView.AddButton(SpritesFolderBtn);
-
-            var RealTimeCPUBtn = PhoneUIUtility.CreateSimpleButton(DebugRealTimeCPUInstructions());
-            RealTimeCPUBtn.OnConfirm += () => { TamaRushPlugin.VisualCPU.Value = !TamaRushPlugin.VisualCPU.Value; RealTimeCPUBtn.Label.text = DebugRealTimeCPUInstructions(); };
-            ScrollView.AddButton(RealTimeCPUBtn);
-
             var backBtn = PhoneUIUtility.CreateSimpleButton("Back");
             backBtn.OnConfirm += ShowSettingsMenu;
             ScrollView.AddButton(backBtn);
@@ -320,7 +304,7 @@ namespace TamaRush.Phone
         {
             ScrollView.RemoveAllButtons();
 
-            string dir = TamaRushPlugin.GetAssetSubfolderPath(subfolder);
+            string dir = Path.Combine(TamaRushPlugin.GetAssetSubfolderPath(), subfolder);
             var images = new System.Collections.Generic.List<string>();
             if (Directory.Exists(dir))
                 foreach (string f in Directory.GetFiles(dir, "*.*"))
@@ -422,7 +406,6 @@ namespace TamaRush.Phone
 
         private static string GetAutoSaveLabel()        => "Auto Save: "         + (TamaRushPlugin.AutoSave.Value    ? "On" : "Off");
         private static string GetAudioLabel()           => "Audio: "             + (TamaRushPlugin.AudioEnabled.Value ? "On" : "Off");
-        private static string DebugRealTimeCPUInstructions()        => "Visual CPU Instructions: "         + (TamaRushPlugin.VisualCPU.Value    ? "On" : "Off");
         private static string GetVolumeLabel()          => $"Volume: {TamaRushPlugin.AudioVolume.Value}/10";
         private static string GetPixelSizeLabel()       => $"Pixel Size: {(TamaRushPlugin.PixelSize.Value == 32 ? "Default" : TamaRushPlugin.PixelSize.Value.ToString())}";
         private static string GetLcdOptionLabel()       { string[] n = { "Mono", "Classic", "Green", "Inverted" }; return "LCD: " + n[(TamaRushPlugin.LcdOption?.Value ?? 0) % n.Length]; }
@@ -786,7 +769,7 @@ namespace TamaRush.Phone
                 rect.anchoredPosition = new Vector2(-16f, -10f);
             }
 
-            _label.text = "Your save file has been deleted.";
+            _label.text = "Your save file(s) has been deleted.";
             _canvasGo.SetActive(true);
             if (_hideCoroutine != null)
                 StopCoroutine(_hideCoroutine);
