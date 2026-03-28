@@ -122,7 +122,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 # Credit :memo: :
 - **Tamalib:** TamaRush's emulator is heavily based off of Tamalib, just built from the ground up to only work in unity/BRC
 
-- **TamaTool:** Extra features in TamaRush like LCD colors, speed, save states, were based on features from TamaTool, which is a stand alone emulator also built on top of Tamalib
+- **TamaTool:** Extra features in TamaRush like LCD colors, speed, the save system, etc were based on features from TamaTool, which is a stand alone emulator also built on top of Tamalib
 
 - **BRC-CODE-DMG:** This is the project that gave me the idea to even attempt tamarush, alongside also being super helpful when it came to road blocks I ran into with the audio and display systems
 
