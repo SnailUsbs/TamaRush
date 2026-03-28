@@ -1,6 +1,6 @@
 # TamaRush
 
-![](https://github.com/SnailUsbs/TamaRush/blob/main/Thunderstore%20Build/icon.png)
+![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/icon.png)
 
 A Tamagotchi emulator mod for Bomb Rush Cyberfunk
 
@@ -80,7 +80,6 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
   ## In-Game Phone App:
 
-  - **App:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/Phone%20App/TheApp.png)
   - **Main Menu:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/Phone%20App/MainMenu.png)
   - **Settings Menu:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/Phone%20App/SettingsMenu.png)
   - **Game/ROMs Menu:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/Phone%20App/GameRomMenu.png)
