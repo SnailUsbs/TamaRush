@@ -34,11 +34,19 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
 # How To Use :question: :
 
+<details>
+  <summary><b>Game/ROM Setup</b></summary>
+
+  - **ONLY *".bin"* ROMS Work:** This emulator is desgined to only support *".bin"* based roms, but the *".bin"* files can be named whatever though.
+  - 
+  - **Place your ROM(s) in your *BepInEX/TamaRush/Roms* folder:** You can use the in-game phone app to directly open this folder if you cant' find it.
+  - 
+  - **You most get your own legally obtained ROM:** This mod does not have any of the game code, just code to mimic the hardware needed to run the game. You will need to get your own legally obtained rom,  and  then place it/them in your *BepInEX/TamaRush/Roms* folder.
+  - 
+  - **You most get your own legally obtained Background/Icon Images:** You need to get your own background and icon images, and then put them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Background*.
+</details>
+
 - **The Tamarush mod can be downloaded from Thunderstore, or directly in your thunderstore based mod managers like R2ModMan**
-
-- **You most get your own legally obtained ROM:** This mod does not have any of the game code, just code to mimic the hardware needed to run the game. You will need to get your own legally obtained rom, and then place it/them in your *BepInEX/TamaRush/Roms* folder.
-
-- **You most get your own legally obtained Background/Icon Images:** While TamaRush has some original icons that are meant to act as place holders, you need to get your own background and icon images, and then put them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Backgrounds*.
 
 - **Tamarush adds a new phone app to the in-game phone, which is where you can do everything you need to releating to this mod**
 
@@ -61,6 +69,10 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 - **Only 5 Save files, per ROM, will be stored at one time (Not including backups):** For each rom, only 5 save files will be saved at a given time, with new save files always overwriting the oldest one
 
 - **ROM's Save folders, where the save files are stored, are based on the ROM's name:** Your save files for each rom, and the folder they are placed in, will be named after whatever is the rom is named.
+
+- **You most get your own legally obtained ROM:** This mod does not have any of the game code, just code to mimic the hardware needed to run the game. You will need to get your own legally obtained rom, and then place it/them in your *BepInEX/TamaRush/Roms* folder.
+
+- **You most get your own legally obtained Background/Icon Images:** While TamaRush has some original icons that are meant to act as place holders, you need to get your own background and icon images, and then put them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Backgrounds*.
 
 # Credit :memo: :
 - **Tamalib:** TamaRush's emulator is heavily based off of Tamalib, just built from the ground up to only work in unity/BRC
