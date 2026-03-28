@@ -33,7 +33,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 </details>
 
 
-# Images :camera_with_flash: :
+# Images :camera: :
 <details>
   <summary><b>LCD Color Options</b></summary>
 
