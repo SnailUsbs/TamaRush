@@ -12,15 +12,11 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - **Manage Saves:** You can easily delete/back up save files from the phone, allowing you to quickly restart whenever you want
   - **Swap Between ROMs:** There's an option in game settings that will let you select a rom to run, allowing you to have multiple at one time. (Each ROM gets it's own folder to hold save files in)
   - **All From The In Game Phone:** Everything in this mod, including even opening up the folders, can be done from within the in-game phone.
-
-<details>
   
 <details>
   <summary><b>Cheats</b></summary>
   
   - **Speed Settings:** You can set the game to run at either normal, 2x, 4x, 6x speed.
-  
-<details>
 
 <details>
   <summary><b>Customize</b></summary>
