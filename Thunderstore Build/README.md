@@ -21,7 +21,8 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   <summary><b>Cheats</b></summary>
   
   - **Speed Settings:** You can set the game to run at either normal, 2x, 4x, 6x speed.
-
+<details>
+  
 <details>
   <summary><b>Customize</b></summary>
 
