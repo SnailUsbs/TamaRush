@@ -57,6 +57,8 @@ namespace TamaRush
             Directory.CreateDirectory(Path.Combine(TamaRushAssetsFolderPath, "Icons"));
             Directory.CreateDirectory(Path.Combine(TamaRushAssetsFolderPath, "Background"));
 
+            RenameBFilesToBin();
+
             _harmony = new Harmony(PluginInfo.PLUGIN_GUID);
             _harmony.PatchAll();
 
@@ -87,6 +89,28 @@ namespace TamaRush
                 if (ext == ".png" || ext == ".jpg" || ext == ".jpeg") return f;
             }
             return null;
+        }
+
+        private static void RenameBFilesToBin()
+        {
+            string romsFolder = Path.Combine(TamaRushFolderPath, "Roms");
+            if (!Directory.Exists(romsFolder)) return;
+            string[] bFiles = Directory.GetFiles(romsFolder, "*.b");
+            foreach (string bFile in bFiles)
+            {
+                try
+                {
+                    string fileNameWithoutExt = Path.GetFileNameWithoutExtension(bFile);
+                    string binPath = Path.Combine(romsFolder, fileNameWithoutExt + ".bin");
+                    if (!File.Exists(binPath))
+                    {
+                        File.Move(bFile, binPath);
+                    }
+                }
+                catch (System.Exception)
+                {
+                }
+            }
         }
 
         private void OnDestroy()
