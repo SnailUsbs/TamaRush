@@ -61,6 +61,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
     > **- Phone Right:** Right button on a tamagotchi
     > 
     > **- Phone Down:** Tap input in the form of a button (used for Angel devices/roms)
+<details>
 
 <details>
   <summary><b>Extra Info/Steps</b></summary>
