@@ -46,21 +46,42 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - **You most get your own legally obtained Background/Icon Images:** You need to get your own background and icon images, and then put them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Background*.
 </details>
 
-- **The Tamarush mod can be downloaded from Thunderstore, or directly in your thunderstore based mod managers like R2ModMan**
 
-- **Tamarush adds a new phone app to the in-game phone, which is where you can do everything you need to releating to this mod**
+<details>
+  <summary><b>Controls</b></summary>
+  
+  - **Controls for the emulator, are the phone buttons:** When you are in the *play* mode, BRC's inputs are rewired to only let you intereact with the emulator, which you with either:
+    >
+    > **- Dance Button:** Leave play mode/close tamagotchi emulator
+    >
+    > **- Phone Left:** Left button on a tamagotchi
+    > 
+    > **- Phone Center:** Center button on a tamagotchi
+    > 
+    > **- Phone Right:** Right button on a tamagotchi
+    > 
+    > **- Phone Down:** Tap input in the form of a button (used for Angel devices/roms)
 
-- **Controls for the emulator, are the phone buttons:** When you are in the *play* mode, BRC's inputs are rewired to only let you intereact with the emulator, which you with either:
->
-> **- Dance Button:** Leave play mode/close tamagotchi emulator
->
-> **- Phone Left:** Left button on a tamagotchi
-> 
-> **- Phone Center:** Center button on a tamagotchi
-> 
-> **- Phone Right:** Right button on a tamagotchi
-> 
-> **- Phone Down:** Tap input in the form of a button (used for Angel devices/roms)
+<details>
+  <summary><b>Extra Info/Steps</b></summary>
+
+  - **The Tamarush mod can be downloaded from Thunderstore, or directly in your thunderstore based mod managers like R2ModMan**
+  - 
+  - **Tamarush adds a new phone app to the in-game phone, which is where you can do everything you need to releating to this mod**
+  - 
+  - **Controls for the emulator, are the phone buttons:** When you are in the *play* mode, BRC's inputs are rewired to only let you intereact with the emulator, which you with either:
+    >
+    > **- Dance Button:** Leave play mode/close tamagotchi emulator
+    >
+    > **- Phone Left:** Left button on a tamagotchi
+    > 
+    > **- Phone Center:** Center button on a tamagotchi
+    > 
+    > **- Phone Right:** Right button on a tamagotchi
+    > 
+    > **- Phone Down:** Tap input in the form of a button (used for Angel devices/roms)
+
+</details>
 
 # Important Info :bangbang: :rotating_light:  :
 
