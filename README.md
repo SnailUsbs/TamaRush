@@ -113,7 +113,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
 # Important Info :bangbang: :rotating_light:  :
 
-- **ROM Files can be named what ever you want, but they must end in either *".b"* or *".bin"*:** Tamarush only supports .bin based roms, however there is a system in place to automically rename any .b files into .bins when they are found, so you can still use .b roms like normal. 
+- **ROM Files can be named what ever you want, but they must end in either *".b"* or *".bin"*:** Tamarush only supports .bin based roms, however there is a system in place to automically rename any .b files into .bin when they are found, so you can still use .b roms like normal. 
 
 - **Only 5 Save files, per ROM, will be stored at one time (Not including backups):** For each rom, only 5 save files will be saved at a given time, with new save files always overwriting the oldest one
 
