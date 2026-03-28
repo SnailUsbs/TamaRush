@@ -39,8 +39,39 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
 ## How To Use:
 
+- **The Tamarush mod can be downloaded from Thunderstore, or directly in your thunderstore based mod managers like R2ModMan**
+
+- **You most get your own legally obtained ROM:** This mod does not have any of the game code, just code to mimic the hardware needed to run the game. You will need to get your own legally obtained rom, and then place it/them in your *BepInEX/TamaRush/Roms* folder.
+
+- **You most get your own legally obtained Background/Icon Images:** While TamaRush has some original icons that are meant to act as place holders, you need to get your own background and icon images, and then put them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Backgrounds*.
+
+- **Tamarush adds a new phone app to the in-game phone, which is where you can do everything you need to releating to this mod**
+
+- **Controls for the emulator, are the phone buttons:** When you are in the *play* mode, BRC's inputs are rewired to only let you intereact with the emulator, which you with either:
+> **- Phone Left:** Left button on a tamagotchi
+> **- Phone Center:** Center button on a tamagotchi
+> **- Phone Right:** Right button on a tamagotchi
+> **- Phone Down:** Tap input in the form of a button (used for Angel devices/roms)
+
 ## Important Info:
+
+- **ONLY *".bin"* ROMS Work:** This emulator is desgined to only support *".bin"* based roms.
+
+- **Only 5 Save files, per ROM, will be stored at one time (Not including backups):** For each rom, only 5 save files will be saved at a given time, with new save files always overwriting the oldest one
+
+- **ROM's Save folders, where the save files are stored, are based on the ROM's name:** Your save files for each rom, and the folder they are placed in, will be named after whatever is the rom is named.
 
 ## FAQS:
 
 ## Credit:
+- **Tamalib:** TamaRush's emulator is heavily based off of Tamalib, just built from the ground up to only work in unity/BRC
+
+- **TamaTool:** Extra features in TamaRush like LCD colors, speed, save states, were based on features from TamaTool, which is a stand alone emulator also built on top of Tamalib
+
+- **BRC-CODE-DMG:** After getting stuck on the rendering pipe line between BRC and the emulator, I looked at this project and figured out Delta Transform was my fix. I also used this project to figure out how to wire up audio from the emulator, into BRC.
+
+- **Tamalib:** https://github.com/jcrona/tamalib
+
+- **Tamatool:** https://github.com/jcrona/tamatool/
+
+- **BRC-CODE-DMG:** https://github.com/AbsentmindedGCN/BRC-CODE-DMG/
