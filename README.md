@@ -33,17 +33,6 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - **LCD Color Options:** There are multiple color options for the LCDs in the emulator, allowing you to play in what ever style you want.
 </details>
 
-<details>
-  <summary><b>Images</b></summary>
-
-  # Images:
-  - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image3.png)
-  - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image4.png)
-  - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image.png)
-  - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image2.png)
-  
-</details>
-
 # Images:
 <details>
   <summary><b>LCD Color Options</b></summary>
