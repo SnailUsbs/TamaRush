@@ -1,4 +1,7 @@
 # TamaRush
+
+![](https://github.com/SnailUsbs/TamaRush/blob/main/Thunderstore%20Build/icon.png)
+
 A Tamagotchi emulator mod for Bomb Rush Cyberfunk
 
 Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built from the ground up to fit in unity/BRC, while also keeping and even adding onto the core features of the projects it based off, which are: Tamalib, Tamatool, PyTama.
