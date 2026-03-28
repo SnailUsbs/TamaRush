@@ -1,0 +1,9 @@
+{
+    "name": "TamaRush",
+    "version_number": "1.1.1",
+    "website_url": "https://github.com/SnailUsbs/Tamarush",
+    "description": "A Tamagotchi emulator mod for Bomb Rush Cyberfunk ",
+    "dependencies":["BepInEx-BepInExPack-5.4.2100", "LazyDuchess-CommonAPI-1.3.1"],
+    "incompatibilities":[],
+    "optionalDependencies":[]
+}
