@@ -26,6 +26,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - **Pixel Size Control:** You can change the size of pixels, allowing you to zoom in a sense.
 
   - **All From The In Game Phone:** Everything in this mod, including even opening up the folders, can be done from within the in-game phone.
+</details>
 
 ## How To Use:
 
