@@ -25,35 +25,12 @@ namespace TamaRush
         public static ConfigEntry<int>    PixelSize           { get; private set; }
         public static ConfigEntry<string> SelectedRom         { get; private set; }
         public static ConfigEntry<bool>   DebugMode           { get; private set; }
-        public static ConfigEntry<bool>   VisualCPU           { get; private set; }
 
         public static string TamaRushFolderPath { get; private set; }
+        public static string TamaRushAssetsFolderPath { get; private set; }
 
         public static string GetAppIconPath(string filename)
             => string.IsNullOrEmpty(_modFolder) ? null : Path.Combine(_modFolder, filename);
-
-        public static string GetAssetSubfolderPath(string subfolder)
-            => string.IsNullOrEmpty(_modFolder) ? null : Path.Combine(_modFolder, "Assets", subfolder);
-
-        public static string GetAssetFolderFile(string subfolder)
-        {
-            if (string.IsNullOrEmpty(_modFolder)) return null;
-
-            string configured = subfolder == "Background" ? SelectedBackground?.Value
-                              : subfolder == "Icons"      ? SelectedIcons?.Value
-                              : null;
-            if (!string.IsNullOrEmpty(configured) && File.Exists(configured))
-                return configured;
-
-            string dir = Path.Combine(_modFolder, "Assets", subfolder);
-            if (!Directory.Exists(dir)) return null;
-            foreach (string f in Directory.GetFiles(dir, "*.*"))
-            {
-                string ext = Path.GetExtension(f).ToLowerInvariant();
-                if (ext == ".png" || ext == ".jpg" || ext == ".jpeg") return f;
-            }
-            return null;
-        }
 
         private void Awake()
         {
@@ -66,19 +43,19 @@ namespace TamaRush
             SelectedBackground = Config.Bind("Customize", "SelectedBackground", "",    "Full path to the background image file.");
             SelectedIcons      = Config.Bind("Customize", "SelectedIcons",      "",    "Full path to the icons spritesheet file.");
             AudioEnabled       = Config.Bind("Audio", "AudioEnabled",       true,  "When enabled, the Tamagotchi buzzer sound plays.");
-            AudioVolume        = Config.Bind("Audio", "AudioVolume",        5,     "Buzzer volume level 1-10.");
+            AudioVolume        = Config.Bind("Audio", "AudioVolume",        1,     "Buzzer volume level 1-10.");
             PixelSize          = Config.Bind("Game/ROM", "PixelSize",          32,    "LCD pixel size in Unity units.");
             SelectedRom        = Config.Bind("Game/ROM", "SelectedRom",        "",    "Full path to the ROM to load.");
             DebugMode          = Config.Bind("DEBUG", "DebugMode",          false, "Extra options that may run bad on lower end devices.");
-            VisualCPU          = Config.Bind("DEBUG", "Visual CPU Instructions",          false, "Will have add on screen text showing what the emulator's CPU is doing.");
 
             TamaRushFolderPath = Path.Combine(BepInEx.Paths.BepInExRootPath, "TamaRush");
             Directory.CreateDirectory(TamaRushFolderPath);
             Directory.CreateDirectory(Path.Combine(TamaRushFolderPath, "Saves"));
             Directory.CreateDirectory(Path.Combine(TamaRushFolderPath, "Roms"));
-            Directory.CreateDirectory(Path.Combine(TamaRushFolderPath, "Backgrounds"));
-            Directory.CreateDirectory(Path.Combine(TamaRushFolderPath, "Icons"));
-            Directory.CreateDirectory(Path.Combine(TamaRushFolderPath, "Sprites"));
+            Directory.CreateDirectory(Path.Combine(TamaRushFolderPath, "Assets"));
+            TamaRushAssetsFolderPath = Path.Combine(TamaRushFolderPath, "Assets");
+            Directory.CreateDirectory(Path.Combine(TamaRushAssetsFolderPath, "Icons"));
+            Directory.CreateDirectory(Path.Combine(TamaRushAssetsFolderPath, "Background"));
 
             _harmony = new Harmony(PluginInfo.PLUGIN_GUID);
             _harmony.PatchAll();
@@ -87,6 +64,29 @@ namespace TamaRush
             playModeGo.AddComponent<TamaRushPlayMode>();
 
             AppTamaRush.Initialize();
+        }
+
+        public static string GetAssetSubfolderPath()
+            => string.IsNullOrEmpty(TamaRushAssetsFolderPath) ? null : TamaRushAssetsFolderPath;
+
+        public static string GetAssetFolderFile(string subfolder)
+        {
+            if (string.IsNullOrEmpty(TamaRushAssetsFolderPath)) return null;
+
+            string configured = subfolder == "Background" ? SelectedBackground?.Value
+                              : subfolder == "Icons"      ? SelectedIcons?.Value
+                              : null;
+            if (!string.IsNullOrEmpty(configured) && File.Exists(configured))
+                return configured;
+
+            string dir = Path.Combine(TamaRushAssetsFolderPath, subfolder);
+            if (!Directory.Exists(dir)) return null;
+            foreach (string f in Directory.GetFiles(dir, "*.*"))
+            {
+                string ext = Path.GetExtension(f).ToLowerInvariant();
+                if (ext == ".png" || ext == ".jpg" || ext == ".jpeg") return f;
+            }
+            return null;
         }
 
         private void OnDestroy()
