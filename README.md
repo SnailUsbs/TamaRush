@@ -96,7 +96,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
 - **You most get your own legally obtained ROM:** This mod does not have any of the game code, just code to mimic the hardware needed to run the game. You will need to get your own legally obtained rom, and then place it/them in your *BepInEX/TamaRush/Roms* folder.
 
-- **You most get your own legally obtained Background/Icon Images:** While TamaRush has some original icons that are meant to act as place holders, you need to get your own background and icon images, and then put them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Backgrounds*.
+- **You most get your own legally obtained Background/Icon Images:** You will need to get your own Backgrounds/Icon images, and place them in *BepInEX/TamaRush/Icons* & *BepInEX/TamaRush/Backgrounds*. You can easily find some in Tamatool's repo here: [Link](https://github.com/jcrona/tamatool/tree/master/res)
 
 - **Tamarush adds a new phone app to the in-game phone, which is where you can do everything you need to releating to this mod**
 
