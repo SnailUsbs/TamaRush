@@ -86,6 +86,9 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 - **Tamarush adds a new phone app to the in-game phone, which is where you can do everything you need to releating to this mod**
 
 - **Controls for the emulator, are the phone buttons:** When you are in the *play* mode, BRC's inputs are rewired to only let you intereact with the emulator, which you with either:
+>
+> **- Dance Button:** Leave play mode/close tamagotchi emulator
+>
 > **- Phone Left:** Left button on a tamagotchi
 > 
 > **- Phone Center:** Center button on a tamagotchi
