@@ -1,7 +1,5 @@
 # TamaRush
 
-![](https://github.com/SnailUsbs/TamaRush/blob/main/Thunderstore%20Build/icon.png)
-
 A Tamagotchi emulator mod for Bomb Rush Cyberfunk
 
 Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built from the ground up to fit in unity/BRC, while also keeping and even adding onto the core features of the projects it based off, which are: Tamalib, Tamatool, PyTama.
@@ -30,34 +28,6 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - **Audio Control:** Disable audio entirely or set volume on a 1 - 10 scale.
   - **Pixel Size Control:** Change the size of pixels/Display.
   - **LCD Color Options:** Multiple color options for the LCDs.
-</details>
-
-
-# Images :camera: :
-<details>
-  <summary><b>LCD Color Options</b></summary>
-
-  ## LCD Color Options Images:
-
-  - **Classic:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Classic.png)
-  - **Green:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Green.png)
-  - **Mono:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Mono.png)
-  - **Inverted:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Inverted.png)
-  - **Blue:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Blue.png)
-  - **Bisque:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Bisque.png)
-  - **Cyan:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Cyan.png)
-  - **Grey:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Grey.png)
-  - **Hot Pink:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Hotpink.png)
-  - **Lime:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Lime.png)
-  - **Orange:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Orange.png)
-  - **Pink:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Pink.png)
-  - **Purple:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Purple.png)
-  - **Red:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Red.png)
-  - **Saddle Brown:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_SaddleBrown.png)
-  - **Spring Green:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_SpringGreen.png)
-  - **Teal:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Teal.png)
-  - **Yellow:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Yellow.png)
-  
 </details>
 
 # How To Use :question: :
