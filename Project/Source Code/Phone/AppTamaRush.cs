@@ -354,12 +354,13 @@ namespace TamaRush.Phone
         private static string GetRunInBackgroundLabel() => "Run In Background: " + (TamaRushPlugin.RunInBackground.Value ? "On" : "Off");
         private static string GetGameSpeedLabel() { int s = TamaRushPlugin.GameSpeed.Value; return "Game Speed: " + (s >= 6 ? "6x" : s >= 4 ? "4x" : s >= 2 ? "2x" : "Normal"); }
         private static string GetDebugGameSpeedLabel() { int s = TamaRushPlugin.GameSpeed.Value; return "Game Speed: " + (s == 0 ? "Unlimited" : s >= 6 ? "6x" : s >= 4 ? "4x" : s >= 2 ? "2x" : "Normal"); }
+
         private void ShowCustomizeMenu()
         {
             ScrollView.RemoveAllButtons();
 
             var lcdBtn = PhoneUIUtility.CreateSimpleButton(GetLcdOptionLabel());
-            lcdBtn.OnConfirm += () => { TamaRushPlugin.LcdOption.Value = (TamaRushPlugin.LcdOption.Value + 1) % 4; lcdBtn.Label.text = GetLcdOptionLabel(); if (_emu != null) _emu.LcdDirty = true; };
+            lcdBtn.OnConfirm += () => { TamaRushPlugin.LcdOption.Value = (TamaRushPlugin.LcdOption.Value + 1) % 18; lcdBtn.Label.text = GetLcdOptionLabel(); if (_emu != null) _emu.LcdDirty = true; };
             ScrollView.AddButton(lcdBtn);
 
             var bgBtn = PhoneUIUtility.CreateSimpleButton(GetSelectedAssetLabel("Background", TamaRushPlugin.SelectedBackground?.Value));
@@ -381,6 +382,14 @@ namespace TamaRush.Phone
                 RebuildGameScreen();
             };
             ScrollView.AddButton(pixelBtn);
+
+            var BackgroundFolderBtn = PhoneUIUtility.CreateSimpleButton("Background Folder");
+            BackgroundFolderBtn.OnConfirm += OpenBackgroundFolder;
+            ScrollView.AddButton(BackgroundFolderBtn);
+
+            var IconsFolderBtn = PhoneUIUtility.CreateSimpleButton("Icons Folder");
+            IconsFolderBtn.OnConfirm += OpenIconsFolder;
+            ScrollView.AddButton(IconsFolderBtn);
 
             var backBtn = PhoneUIUtility.CreateSimpleButton("Back");
             backBtn.OnConfirm += ShowSettingsMenu;
@@ -408,7 +417,7 @@ namespace TamaRush.Phone
         private static string GetAudioLabel()           => "Audio: "             + (TamaRushPlugin.AudioEnabled.Value ? "On" : "Off");
         private static string GetVolumeLabel()          => $"Volume: {TamaRushPlugin.AudioVolume.Value}/10";
         private static string GetPixelSizeLabel()       => $"Pixel Size: {(TamaRushPlugin.PixelSize.Value == 32 ? "Default" : TamaRushPlugin.PixelSize.Value.ToString())}";
-        private static string GetLcdOptionLabel()       { string[] n = { "Mono", "Classic", "Green", "Inverted" }; return "LCD: " + n[(TamaRushPlugin.LcdOption?.Value ?? 0) % n.Length]; }
+        private static string GetLcdOptionLabel()       { string[] n = { "Mono", "Classic", "Green", "Inverted", "Blue", "Red", "Lime", "Cyan", "Yellow", "Grey", "HotPink", "Orange", "Purple", "Pink", "Crimson", "Bisque", "SaddleBrown", "SpringGreen" }; return "LCD: " + n[(TamaRushPlugin.LcdOption?.Value ?? 0) % n.Length]; }
 
         private static string GetSelectedRomLabel()
         {
@@ -441,6 +450,20 @@ namespace TamaRush.Phone
                 case 1:  return on ? new Color32(0,   0,   128, 255) : new Color32(216, 216, 192, 255);
                 case 2:  return on ? new Color32(15,  56,  15,  255) : new Color32(139, 172, 15,  255);
                 case 3:  return on ? new Color32(255, 255, 255, 255) : new Color32(0,   0,   0,   255);
+                case 4:  return on ? new Color32(0,   100, 255, 255) : new Color32(0,   20,  40,  255);
+                case 5:  return on ? new Color32(255, 0,   0,   255) : new Color32(40,  0,   0,   255);
+                case 6:  return on ? new Color32(0,   255, 0,   255) : new Color32(0,   40,  0,   255);
+                case 7:  return on ? new Color32(0,   255, 255, 255) : new Color32(0,   40,  40,  255);
+                case 8:  return on ? new Color32(255, 255, 0,   255) : new Color32(40,  40,  0,   255);
+                case 9:  return on ? new Color32(192, 192, 192, 255) : new Color32(32,  32,  32,  255);
+                case 10: return on ? new Color32(255, 105, 180, 255) : new Color32(60,  20,  40,  255);
+                case 11: return on ? new Color32(255, 165, 0,   255) : new Color32(50,  30,  0,   255);
+                case 12: return on ? new Color32(148, 0,   211, 255) : new Color32(30,  0,   50,  255);
+                case 13: return on ? new Color32(255, 192, 203, 255) : new Color32(50,  30,  35,  255);
+                case 14: return on ? new Color32(220, 20,  60,  255) : new Color32(45,  5,   15,  255);
+                case 15: return on ? new Color32(255, 228, 196, 255) : new Color32(50,  40,  35,  255);
+                case 16: return on ? new Color32(139, 69,  19,  255) : new Color32(30,  15,  5,   255);
+                case 17: return on ? new Color32(0,   255, 127, 255) : new Color32(0,   50,  25,  255);
                 default: return on ? new Color32(0,   0,   0,   255) : new Color32(255, 255, 255, 255);
             }
         }
@@ -668,6 +691,21 @@ namespace TamaRush.Phone
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
             Application.OpenURL("file:///" + path.Replace('\\', '/'));
         }
+
+        private static void OpenBackgroundFolder()
+        {
+            var path = Path.Combine(TamaRushPlugin.TamaRushAssetsFolderPath, "Background");
+            if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+            Application.OpenURL("file:///" + path.Replace('\\', '/'));
+        }
+
+        private static void OpenIconsFolder()
+        {
+            var path = Path.Combine(TamaRushPlugin.TamaRushAssetsFolderPath, "Icons");
+            if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+            Application.OpenURL("file:///" + path.Replace('\\', '/'));
+        }
+
 
         private void SaveFileBackedUp()
         {
