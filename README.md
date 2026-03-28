@@ -6,7 +6,7 @@ A Tamagotchi emulator mod for Bomb Rush Cyberfunk
 
 Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built from the ground up to fit in unity/BRC, while also keeping and even adding onto the core features of the projects it based off, which are: Tamalib, Tamatool, PyTama.
 
-# Features
+# Features :newspaper: :
 <details>
   <summary><b>Game / Saves</b></summary>
   
@@ -33,7 +33,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 </details>
 
 
-# Images:
+# Images :camera_with_flash: :
 <details>
   <summary><b>LCD Color Options</b></summary>
 
@@ -60,7 +60,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   
 </details>
 
-# How To Use:
+# How To Use :question: :
 
 - **The Tamarush mod can be downloaded from Thunderstore, or directly in your thunderstore based mod managers like R2ModMan**
 
@@ -79,7 +79,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 > 
 > **- Phone Down:** Tap input in the form of a button (used for Angel devices/roms)
 
-# Important Info :question: :
+# Important Info :bangbang: :rotating_light:  :
 
 - **ONLY *".bin"* ROMS Work:** This emulator is desgined to only support *".bin"* based roms.
 
@@ -87,7 +87,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
 - **ROM's Save folders, where the save files are stored, are based on the ROM's name:** Your save files for each rom, and the folder they are placed in, will be named after whatever is the rom is named.
 
-# Credit:
+# Credit :medal: :
 - **Tamalib:** TamaRush's emulator is heavily based off of Tamalib, just built from the ground up to only work in unity/BRC
 
 - **TamaTool:** Extra features in TamaRush like LCD colors, speed, save states, were based on features from TamaTool, which is a stand alone emulator also built on top of Tamalib
