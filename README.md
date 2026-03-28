@@ -31,13 +31,6 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - **Pixel Size Control:** You can change the size of pixels, allowing you to zoom in a sense.
 
   - **LCD Color Options:** There are multiple color options for the LCDs in the emulator, allowing you to play in what ever style you want.
-  <details>
-    <summary><b>LCD Color Options Images</b></summary>
-
-    - **Blue:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Blue.png)
-
-
-  </details>
 
 <details>
   <summary><b>Images</b></summary>
@@ -47,6 +40,33 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
   - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image4.png)
   - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image.png)
   - ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/image2.png)
+  
+</details>
+
+# Images:
+<details>
+  <summary><b>LCD Color Options</b></summary>
+
+  ## LCD Color Options Images:
+
+  - **Classic:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Classic.png)
+  - **Green:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Green.png)
+  - **Mono:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Mono.png)
+  - **Inverted:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Inverted.png)
+  - **Blue:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Blue.png)
+  - **Bisque:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Bisque.png)
+  - **Cyan:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Cyan.png)
+  - **Grey:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Grey.png)
+  - **Hot Pink:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Hotpink.png)
+  - **Lime:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Lime.png)
+  - **Orange:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Orange.png)
+  - **Pink:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Pink.png)
+  - **Purple:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Purple.png)
+  - **Red:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Red.png)
+  - **Saddle Brown:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_SaddleBrown.png)
+  - **Spring Green:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_SpringGreen.png)
+  - **Teal:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Teal.png)
+  - **Yellow:** ![](https://github.com/SnailUsbs/TamaRush/blob/main/Images/LCD%20Color%20Images/TR_Yellow.png)
   
 </details>
 
