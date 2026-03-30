@@ -91,7 +91,7 @@ Tamarush is a Bomb Rush Cyberfunk mod that adds in a Tamagotchi emulator, built 
 
 # How To Use :question: :
 
-- **Currently Tamarush can only be installed manually, which you can find a guide for in the releases page**
+- **Download the mod *"Tamarush"* mod in your thunderstore based mod manager, or manaully install using this page: [Link](https://github.com/SnailUsbs/TamaRush/releases/tag/Tamarushv1) **
 
 - **You most get your own legally obtained ROM:** This mod does not have any of the game code, just code to mimic the hardware needed to run the game. You will need to get your own legally obtained rom, and then place it/them in your *BepInEX/TamaRush/Roms* folder.
 
